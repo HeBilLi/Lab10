@@ -91,9 +91,11 @@
           let mainPane = document.querySelector("main");
 
           if (treatment === "on") {
+            mainPane.classList.remove("single-column");
             mainPane.classList.add("double-column");
           } else if (treatment === "off") {
             mainPane.classList.remove("double-column");
+            mainPane.classList.add("single-column");
           } else {
             // Insert code for control treatment
           }
